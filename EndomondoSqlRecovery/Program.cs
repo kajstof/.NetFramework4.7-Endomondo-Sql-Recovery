@@ -263,7 +263,7 @@ namespace EndomondoSqlRecovery
 
         private static double getMinLatitude(List<Track> trackList)
         {
-            double minLatitude = 1000;
+            double minLatitude = double.MaxValue;
 
             foreach (Track track in trackList)
             {
@@ -278,7 +278,7 @@ namespace EndomondoSqlRecovery
 
         private static double getMaxLatitude(List<Track> trackList)
         {
-            double maxLatitude = -1000;
+            double maxLatitude = double.MinValue;
 
             foreach (Track track in trackList)
             {
@@ -293,7 +293,7 @@ namespace EndomondoSqlRecovery
 
         private static double getMinLongitude(List<Track> trackList)
         {
-            double minLongitude = 1000;
+            double minLongitude = double.MaxValue;
 
             foreach (Track track in trackList)
             {
@@ -308,7 +308,7 @@ namespace EndomondoSqlRecovery
 
         private static double getMaxLongitude(List<Track> trackList)
         {
-            double maxLongitude = -1000;
+            double maxLongitude = double.MinValue;
 
             foreach (Track track in trackList)
             {
